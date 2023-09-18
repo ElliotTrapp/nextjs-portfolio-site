@@ -2,10 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
 import bidenImg from "@/public/personal/biden.jpg";
+import jiraImg from "@/public/jira.png";
+import srlImg from "@/public/srl.jpg";
+import ddImg from "@/public/dd.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -38,16 +39,34 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Completed MA in Philosophy",
+    //institution: "The New School for Social Research",
+    location: "New York, NY",
+    description:
+      "Pursued my passion for logic, language, and ethics at the graduate level",
+    icon: React.createElement(LuGraduationCap),
+    date: "2015",
+  },
+  {
+    title: "Simulation Operations Specialist",
+    //institution: "DePaul University",
+    location: "Chicago, IL",
+    description: "Administered DePaul University's nursing simulation lab",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018",
+  },
+  {
     title: "Completed MS in Computer Science",
+    //institution: "DePaul University",
     location: "Chicago, IL",
     description:
-      "I graduated and immediately found a software engineering internship",
+      "Specialized in machine learning and artificial intelligence. After graduating I immediately found a software engineering internship",
     icon: React.createElement(LuGraduationCap),
     date: "2018",
   },
   {
     title: "Software Engineering Intern",
-    //company: "HERE Technologies",
+    //institution: "HERE Technologies",
     location: "Chicago, IL",
     description:
       "Implemented python modules for model verification and validation while honing my python & C++ skills",
@@ -79,20 +98,20 @@ export const projectsData = [
     title: "Sample Return Lander (SRL) Flight Software",
     description: "Currently developing flight software for the SRL project.",
     tags: ["C", "C++", "Python", "Jinja2"],
-    imageUrl: rmtdevImg,
+    imageUrl: srlImg,
   },
   {
     title: "Operational Cloud Store (OCS)",
     description:
       "Developed a data-lake supporting 27 engineering teams across the Mars 2020 and Europa Clipper projects.",
     tags: ["Javascript", "Python", "AWS", "Serverless", "Terraform"],
-    imageUrl: rmtdevImg,
+    imageUrl: ddImg,
   },
   {
     title: "Developed and Administered JIRA Service Desk Automation",
     description: "Automated customer ticket tracking and work status reporting",
     tags: ["Jira"],
-    imageUrl: rmtdevImg,
+    imageUrl: jiraImg,
   },
   {
     title: "Distributed Object Manager (DOM)",
