@@ -59,13 +59,11 @@ export default function Intro() {
           software and mission operations engineer{" "}
         </span>
         with <span className="font-bold">5 years </span>
-        of experience. I enjoy building{" "}
-        <span className="italic">tools & full-stack applications </span>
-        to help scientists explore the universe. My focus is{" "}
+        of experience. I enjoy solving problems to help scientists{" "}
+        <span className="italic"> explore the universe </span> with{" "}
         <span className="underline">
-          Python, Javascript, AWS, and Machine Learning
+          Python, Javascript, AWS, data science, and more.
         </span>
-        .
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"

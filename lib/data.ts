@@ -101,27 +101,27 @@ export const projectsData = [
     imageUrl: srlImg,
   },
   {
-    title: "Operational Cloud Store (OCS)",
+    title: "Operational Cloud Store (OCS) Development",
     description:
       "Developed a data-lake supporting 27 engineering teams across the Mars 2020 and Europa Clipper projects.",
     tags: ["Javascript", "Python", "AWS", "Serverless", "Terraform"],
     imageUrl: ddImg,
   },
   {
-    title: "Developed and Administered JIRA Service Desk Automation",
+    title: "Developed Automated JIRA Service Desk",
     description: "Automated customer ticket tracking and work status reporting",
     tags: ["Jira"],
     imageUrl: jiraImg,
   },
   {
-    title: "Distributed Object Manager (DOM)",
+    title: "Distributed Object Manager (DOM) Operations",
     description:
       "Lead operational support for the DOM, a distributed object store supporting 12 flight projects.",
     tags: ["Python", "Perl", "Bash", "Git"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "NASA JPL Mars 2020 Landing Visualization",
+    title: "Mars 2020 Landing Visualization Development",
     description:
       "Our team developed a visualization of the Mars 2020 landing sequence. I was responsible for integrating orbiter telemetry.",
     tags: ["Javascript", "React"],
