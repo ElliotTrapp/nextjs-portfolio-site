@@ -30,32 +30,29 @@ export default function Project({
         opacity: opacityProgress,
       }}
       className="group mb-3
-      sm:mb-8
-      last:mb-0"
+      last:mb-0
+      sm:mb-8"
     >
       <section
         className="
-    relative transition bg-slate-100 border border-black/5 overflow-hidden rounded-lg
-    sm:pr-8 sm:w-[48rem] sm:h-[20rem]
-    group-even:pl-8
-    hover:bg-slate-200 hover:border-black/10"
+    relative overflow-hidden rounded-lg border border-black/5 bg-slate-100 transition hover:border-black/10 hover:bg-slate-200 group-even:pl-8 sm:h-[20rem] sm:w-[48rem] sm:pr-8"
       >
         {/* Text side of card */}
         <div
-          className="py-4 pb-7 px-5 flex flex-col h-full
-      sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%]
-      group-even:ml-[26rem]"
+          className="flex h-full flex-col px-5 py-4 pb-7
+      group-even:ml-[24rem] sm:max-w-[45%] sm:pl-10 sm:pr-2
+      sm:pt-10"
         >
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-slate-700">{description}</p>
           <ul
-            className="flex flex-wrap mt-4 gap-2
+            className="mt-4 flex flex-wrap gap-2
         sm:mt-auto"
           >
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white"
               >
                 {tag}
               </li>
@@ -68,10 +65,7 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute transition top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        group-even:right-[initial] group-even:-left-40
-        group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04]
-        group-even:group-hover:translate-x-3 group-even:group-hover:-translate-y-3 group-even:group-hover:rotate-2"
+          className="absolute -right-20 top-8 w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-20 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:-translate-y-3 group-even:group-hover:translate-x-3 group-even:group-hover:rotate-2 "
         />
       </section>
     </motion.div>

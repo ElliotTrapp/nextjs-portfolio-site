@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
+import bidenImg from "@/public/personal/biden.jpg";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -75,22 +76,37 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Raspberry Pi",
-    description: "This is a description of the project",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "Web Development",
-    description: "This is another description of the project",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    title: "Sample Return Lander (SRL) Flight Software",
+    description: "Currently developing flight software for the SRL project.",
+    tags: ["C", "C++", "Python", "Jinja2"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "asdf",
-    description: "This is a final description of the project",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Operational Cloud Store (OCS)",
+    description:
+      "Developed a data-lake supporting 27 engineering teams across the Mars 2020 and Europa Clipper projects.",
+    tags: ["Javascript", "Python", "AWS", "Serverless", "Terraform"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Developed and Administered JIRA Service Desk Automation",
+    description: "Automated customer ticket tracking and work status reporting",
+    tags: ["Jira"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Distributed Object Manager (DOM)",
+    description:
+      "Lead operational support for the DOM, a distributed object store supporting 12 flight projects.",
+    tags: ["Python", "Perl", "Bash", "Git"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "NASA JPL Mars 2020 Landing Visualization",
+    description:
+      "Our team developed a visualization of the Mars 2020 landing sequence. I was responsible for integrating orbiter telemetry.",
+    tags: ["Javascript", "React"],
+    imageUrl: bidenImg,
   },
 ] as const;
 
