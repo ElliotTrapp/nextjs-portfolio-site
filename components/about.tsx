@@ -17,10 +17,10 @@ export default function About() {
           After graduating with a degree in{" "}
           <span className="font-medium">Philosophy</span>, I decided to pursue
           my passion for programming. I enrolled in a graduate program that
-          specialized in people transitioning from outside of software. There I
+          specialized transitioning people into software engineering. There I
           specialized in{" "}
           <span className="font-medium">machine learning and data science</span>
-          . <span className="italic">What I love about development</span> is
+          . What I <span className="italic">love</span> about development is
           that it is both <span className="italic">rigorously technical</span>{" "}
           and <span className="italic">deeply creative. </span> I{" "}
           <span className="underline">love</span> the feeling of finally
@@ -45,14 +45,16 @@ export default function About() {
           the next generation grow and learn.
         </p>
         <p className="mb-3">
-          <span className="italic">When I'm not coding</span>, I enjoy scuba
-          diving, science-fiction and horror films, playing with my dog, and the
-          latest video games. I'm always engaged in{" "}
-          <span className="font-medium">learning new things</span>.Currently,
-          I'm learning{" "}
+          When I'm not coding, I enjoy scuba diving, science-fiction and horror
+          films, playing with my dog, and the latest video games. I'm
+          consistently engaged in
+          <span className="font-medium"> learning new things. </span>
+          Currently, I'm learning{" "}
           <span className="font-medium">
             new web frameworks and putting together a side business{" "}
-          </span>
+          </span>{" "}
+          I'm always looking to connect to other developers, so feel free to{" "}
+          reach out!
         </p>
       </div>
     </motion.section>

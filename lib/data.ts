@@ -76,19 +76,19 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Raspberry Pi",
-    description: "raspberry pi",
+    description: "This is a description of the project",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
   },
   {
     title: "Web Development",
-    description: "Web Dev",
+    description: "This is another description of the project",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
   },
   {
     title: "asdf",
-    description: "dadfa",
+    description: "This is a final description of the project",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
