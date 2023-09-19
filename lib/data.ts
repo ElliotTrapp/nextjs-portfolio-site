@@ -39,26 +39,27 @@ export const links = [
 // TODO: read in from a yml file
 
 export const experiencesData = [
-  {
-    title: "Completed MA in Philosophy",
-    //institution: "The New School for Social Research",
-    location: "New York, NY",
-    description:
-      "Pursued my passion for logic, language, and ethics at the graduate level",
-    icon: React.createElement(LuGraduationCap),
-    date: "2015",
-  },
-  {
-    title: "Simulation Operations Specialist",
-    //institution: "DePaul University",
-    location: "Chicago, IL",
-    description: "Administered DePaul University's nursing simulation lab",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018",
-  },
+  //  {
+  //    title: "Completed MA in Philosophy",
+  //    //institution: "The New School for Social Research",
+  //    location: "New York, NY",
+  //    description:
+  //      "Pursued my passion for logic, language, and ethics at the graduate level",
+  //    icon: React.createElement(LuGraduationCap),
+  //    date: "2015",
+  //  },
+  //  {
+  //    title: "Simulation Operations Specialist",
+  //    //institution: "DePaul University",
+  //    location: "Chicago, IL",
+  //    description: "Administered DePaul University's nursing simulation lab",
+  //    icon: React.createElement(LuGraduationCap),
+  //    date: "2018",
+  //  },
   {
     title: "Completed MS in Computer Science",
-    //institution: "DePaul University",
+    institution: "DePaul University",
+    link: "https://www.depaul.edu/Pages/default.aspx",
     location: "Chicago, IL",
     description:
       "Specialized in machine learning and artificial intelligence. After graduating I immediately found a software engineering internship",
@@ -67,7 +68,8 @@ export const experiencesData = [
   },
   {
     title: "Software Engineering Intern",
-    //institution: "HERE Technologies",
+    institution: "HERE Technologies",
+    link: "https://www.here.com/",
     location: "Chicago, IL",
     description:
       "Implemented python modules for model verification and validation while honing my python & C++ skills",
@@ -76,7 +78,8 @@ export const experiencesData = [
   },
   {
     title: "Software Engineering Intern",
-    //company: "NASA Johnson Space Center",
+    institution: "NASA Johnson Space Center",
+    link: "https://www.nasa.gov/centers/johnson/home/index.html",
     location: "Houston, TX",
     description:
       "Authored python and MATLAB libraries to automate data cleaning, ingestion, and verification of pupillometery data. Engaged in research on the use of machine learning to predict cognitive workload of astronauts.",
@@ -85,7 +88,8 @@ export const experiencesData = [
   },
   {
     title: "Software and Mission Operations Engineer",
-    //company: "NASA Jet Propulsion Laboratory",
+    institution: "NASA Jet Propulsion Laboratory",
+    link: "https://www.jpl.nasa.gov/",
     location: "Pasadena, CA",
     description:
       "As a developer, I integrated telemetry into M20 visualization, developed and administered an AWS data-lake for 27 engineering teams, and adapted command schemas to meet requirements for the Sample Return Lander (SRL) project. In operations, I implemented a new command product paradigm, automated customer service processes through JIRA, lead operations support for 12 flight projects, hired, mentored, and managed 4 full-time operations engineers and 3 cohorts of interns.",

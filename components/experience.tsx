@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
+import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
 import {
@@ -41,6 +42,11 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
+              <Link href={experience.link} target="_blank">
+                <p className="!mt-0 font-normal text-slate-700 underline hover:text-slate-400">
+                  {experience.institution}
+                </p>
+              </Link>
               <p className="!mt-0 font-normal">{experience.location}</p>
               <p className="!mt-3 !font-normal text-slate-700">
                 {experience.description}
