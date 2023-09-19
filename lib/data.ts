@@ -6,7 +6,8 @@ import bidenImg from "@/public/personal/biden.jpg";
 import jiraImg from "@/public/jira.png";
 import srlImg from "@/public/srl.jpg";
 import ddImg from "@/public/dd.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import siteImg from "@/public/site.png";
+import domImg from "@/public/dom-cli.png";
 
 export const links = [
   {
@@ -95,17 +96,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Mars 2020 Landing Visualization Development",
+    description:
+      "Integrated orbiter telemetry into a visualization of the Mars 2020 landing sequence, seen here being watched by the President",
+    tags: ["Javascript", "React"],
+    imageUrl: bidenImg,
+  },
+  {
     title: "Sample Return Lander (SRL) Flight Software",
-    description: "Currently developing flight software for the SRL project.",
+    description: "Developing flight software for the SRL project",
     tags: ["C", "C++", "Python", "Jinja2"],
     imageUrl: srlImg,
   },
   {
     title: "Operational Cloud Store (OCS) Development",
     description:
-      "Developed a data-lake supporting 27 engineering teams across the Mars 2020 and Europa Clipper projects.",
+      "Developed a data-lake supporting 27 engineering teams across the Mars 2020 and Europa Clipper projects",
     tags: ["Javascript", "Python", "AWS", "Serverless", "Terraform"],
     imageUrl: ddImg,
+  },
+  {
+    title: "Distributed Object Manager (DOM) Operations",
+    description:
+      "Lead operational support for the DOM, a distributed object store supporting 12 flight projects",
+    tags: ["Python", "Perl", "Bash", "Git"],
+    imageUrl: domImg,
   },
   {
     title: "Developed Automated JIRA Service Desk",
@@ -114,18 +129,11 @@ export const projectsData = [
     imageUrl: jiraImg,
   },
   {
-    title: "Distributed Object Manager (DOM) Operations",
+    title: "ElliotTrapp.com",
     description:
-      "Lead operational support for the DOM, a distributed object store supporting 12 flight projects.",
-    tags: ["Python", "Perl", "Bash", "Git"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Mars 2020 Landing Visualization Development",
-    description:
-      "Our team developed a visualization of the Mars 2020 landing sequence. I was responsible for integrating orbiter telemetry.",
-    tags: ["Javascript", "React"],
-    imageUrl: bidenImg,
+      "Designed and developed this portfolio website to teach myself proper web and React development practices in my free time",
+    tags: ["TypeScript", "React", "Next.js", "TailwindCSS", "Framer Motion"],
+    imageUrl: siteImg,
   },
 ] as const;
 
