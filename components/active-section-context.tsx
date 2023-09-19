@@ -9,7 +9,7 @@ type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
 
-type ActiveSectionContentextType = {
+type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
   timeOfLastClick: number;
@@ -17,7 +17,7 @@ type ActiveSectionContentextType = {
 };
 
 export const ActiveSectionContext =
-  createContext<ActiveSectionContentextType | null>(null);
+  createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({
   children,

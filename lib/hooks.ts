@@ -5,9 +5,12 @@ import {
   SectionName,
 } from "@/components/active-section-context";
 
-export function useSectionInView(SectionName: SectionName) {
+export function useSectionInView(
+  SectionName: SectionName,
+  threshold: number = 0.5,
+) {
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { ref, inView } = useInView({ threshold });
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection(SectionName);
