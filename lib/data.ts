@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { SiHere } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
+import { SiNasa } from "react-icons/si";
 import bidenImg from "@/public/personal/biden.jpg";
 import jiraImg from "@/public/jira.png";
 import srlImg from "@/public/srl.jpg";
@@ -57,13 +57,23 @@ export const experiencesData = [
   //    date: "2018",
   //  },
   {
-    title: "MS in Computer Science",
-    institution: "DePaul University",
-    link: "https://www.depaul.edu/Pages/default.aspx",
-    location: "Chicago, IL",
+    title: "Software and Mission Operations Engineer",
+    institution: "NASA Jet Propulsion Laboratory",
+    link: "https://www.jpl.nasa.gov/",
+    location: "Pasadena, CA",
     description:
-      "Specialized in machine learning and artificial intelligence. After graduating I immediately found a software engineering internship",
-    icon: React.createElement(LuGraduationCap),
+      "As a developer, I integrated telemetry into M20 visualization, developed and administered an AWS data-lake for 27 engineering teams, and adapted command schemas to meet requirements for the Sample Return Lander (SRL) project. In operations, I implemented a new command product paradigm, automated customer service processes through JIRA, lead operations support for 12 flight projects, hired, mentored, and managed 4 full-time operations engineers and 3 cohorts of interns.",
+    icon: React.createElement(SiNasa),
+    date: "2019-Present",
+  },
+  {
+    title: "Software Engineering Intern",
+    institution: "NASA Johnson Space Center",
+    link: "https://www.nasa.gov/centers/johnson/home/index.html",
+    location: "Houston, TX",
+    description:
+      "Authored python and MATLAB libraries to automate data cleaning, ingestion, and verification of pupillometery data. Engaged in research on the use of machine learning to predict cognitive workload of astronauts.",
+    icon: React.createElement(SiNasa),
     date: "2018",
   },
   {
@@ -73,28 +83,18 @@ export const experiencesData = [
     location: "Chicago, IL",
     description:
       "Implemented python modules for model verification and validation while honing my python & C++ skills",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(SiHere),
     date: "2018",
   },
   {
-    title: "Software Engineering Intern",
-    institution: "NASA Johnson Space Center",
-    link: "https://www.nasa.gov/centers/johnson/home/index.html",
-    location: "Houston, TX",
+    title: "MS in Computer Science",
+    institution: "DePaul University",
+    link: "https://www.depaul.edu/Pages/default.aspx",
+    location: "Chicago, IL",
     description:
-      "Authored python and MATLAB libraries to automate data cleaning, ingestion, and verification of pupillometery data. Engaged in research on the use of machine learning to predict cognitive workload of astronauts.",
-    icon: React.createElement(FaReact),
+      "Specialized in machine learning and artificial intelligence. After graduating I immediately found a software engineering internship",
+    icon: React.createElement(LuGraduationCap),
     date: "2018",
-  },
-  {
-    title: "Software and Mission Operations Engineer",
-    institution: "NASA Jet Propulsion Laboratory",
-    link: "https://www.jpl.nasa.gov/",
-    location: "Pasadena, CA",
-    description:
-      "As a developer, I integrated telemetry into M20 visualization, developed and administered an AWS data-lake for 27 engineering teams, and adapted command schemas to meet requirements for the Sample Return Lander (SRL) project. In operations, I implemented a new command product paradigm, automated customer service processes through JIRA, lead operations support for 12 flight projects, hired, mentored, and managed 4 full-time operations engineers and 3 cohorts of interns.",
-    icon: React.createElement(FaReact),
-    date: "2019-Present",
   },
 ] as const;
 
