@@ -1,13 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+
+// This calculates the number of years since a given date
+const YearsSinceDate = ({ startDate }: { startDate: Date }) => {
+  const calculateYears = () => {
+    const now = new Date();
+    const diffInMilliSeconds = Math.abs(now.getTime() - startDate.getTime());
+    return Math.floor(diffInMilliSeconds / (1000 * 60 * 60 * 24 * 365.25));
+  };
+
+  const [years, setYears] = useState(calculateYears());
+
+  useEffect(() => {
+    const interval = setInterval(
+      () => {
+        setYears(calculateYears());
+      },
+      24 * 60 * 60 * 1000,
+    ); // update every day
+
+    return () => clearInterval(interval);
+  }, [startDate]);
+
+  return years;
+};
 
 export default function Intro() {
   const ref = useSectionInView("Home");
@@ -61,7 +85,10 @@ export default function Intro() {
         <span className="font-bold">
           software and mission operations engineer{" "}
         </span>
-        with <span className="font-bold">5 years </span>
+        with{" "}
+        <span className="font-bold">
+          <YearsSinceDate startDate={new Date(2019, 0, 1)} /> years{" "}
+        </span>
         of experience. I enjoy solving problems to help scientists{" "}
         <span className="italic"> explore the universe </span> with{" "}
         <span className="underline">

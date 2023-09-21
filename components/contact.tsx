@@ -9,13 +9,22 @@ export default function Contact() {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
+      className="mb-20 w-[min(100%,38rem)] scroll-mt-28 sm:mb-28"
       id="contact"
     >
-      <div className="flex flex-col items-center justify-center">
-        <SectionHeading>Contact Me</SectionHeading>
-        <div></div>
-      </div>
+      <SectionHeading>Contact Me</SectionHeading>
+      <p className="text-slate-700">
+        Please contact me directly at{" "}
+        <a className="underline" href="mailto:mail@elliottrapp.com">
+          mail@elliottrapp.com
+        </a>{" "}
+        or through this form.
+      </p>
+      <form>
+        {/* <input type="email" placeholder="Your email" /> */}
+        <textarea />
+        <button type="submit">Submit</button>
+      </form>
     </section>
   );
 }
