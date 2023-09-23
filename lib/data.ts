@@ -61,8 +61,13 @@ export const experiencesData = [
     institution: "NASA Jet Propulsion Laboratory",
     link: "https://www.jpl.nasa.gov/",
     location: "Pasadena, CA",
-    description:
-      "As a developer, I integrated telemetry into M20 visualization, developed and administered an AWS data-lake for 27 engineering teams, and adapted command schemas to meet requirements for the Sample Return Lander (SRL) project. In operations, I implemented a new command product paradigm, automated customer service processes through JIRA, lead operations support for 12 flight projects, hired, mentored, and managed 4 full-time operations engineers and 3 cohorts of interns.",
+    description: [
+      "Integrated telemetry into M20 landing visualization",
+      "Developed and administered an AWS data-lake for 27 engineering teams",
+      "Adapted command schemas to meet requirements for the Sample Return Lander(SRL) project",
+      "Automated customer service processes through JIRA",
+      "Hired, mentored, and managed 4 full-time operations engineers and 3 cohorts of interns",
+    ],
     icon: React.createElement(SiNasa),
     date: "2019-Present",
   },
@@ -71,8 +76,10 @@ export const experiencesData = [
     institution: "NASA Johnson Space Center",
     link: "https://www.nasa.gov/centers/johnson/home/index.html",
     location: "Houston, TX",
-    description:
-      "Authored python and MATLAB libraries to automate data cleaning, ingestion, and verification of pupillometery data. Engaged in research on the use of machine learning to predict cognitive workload of astronauts.",
+    description: [
+      "Authored python and MATLAB libraries to automate data cleaning, ingestion, and verification of pupillometery data",
+      "Researched the use of machine learning to predict cognitive workload of astronauts",
+    ],
     icon: React.createElement(SiNasa),
     date: "2018",
   },
@@ -81,8 +88,10 @@ export const experiencesData = [
     institution: "HERE Technologies",
     link: "https://www.here.com/",
     location: "Chicago, IL",
-    description:
-      "Implemented python modules for model verification and validation while honing my python & C++ skills",
+    description: [
+      "Implemented python modules for model verification and validation",
+      "Continued honing my python & C++ skills",
+    ],
     icon: React.createElement(SiHere),
     date: "2018",
   },
@@ -91,8 +100,10 @@ export const experiencesData = [
     institution: "DePaul University",
     link: "https://www.depaul.edu/Pages/default.aspx",
     location: "Chicago, IL",
-    description:
-      "Specialized in machine learning and artificial intelligence. After graduating I immediately found a software engineering internship",
+    description: [
+      "Specialized in machine learning and artificial intelligence",
+      "After graduating, I immediately found a software engineering internship",
+    ],
     icon: React.createElement(LuGraduationCap),
     date: "2018",
   },
@@ -102,7 +113,7 @@ export const projectsData = [
   {
     title: "Mars 2020 Landing Visualization Development",
     description:
-      "Integrated orbiter telemetry into a visualization of the Mars 2020 landing sequence, seen here being watched by the President",
+      "Integrated orbiter telemetry into a visualization of the Mars 2020 landing sequence. The President tweeted this picture of him watching our visualization.",
     tags: ["Javascript", "React"],
     imageUrl: bidenImg,
   },

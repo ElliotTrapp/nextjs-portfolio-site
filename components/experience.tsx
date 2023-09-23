@@ -16,7 +16,7 @@ export default function Experience() {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[50rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[70rem] scroll-mt-28 text-center sm:mb-40"
       id="experience"
     >
       <SectionHeading>Experience</SectionHeading>
@@ -48,9 +48,18 @@ export default function Experience() {
                 </p>
               </Link>
               <p className="!mt-0 font-normal">{experience.location}</p>
-              <p className="!mt-3 !font-normal text-slate-700">
-                {experience.description}
-              </p>
+              <ul className="mt-2 flex flex-wrap gap-2">
+                {experience.description.map((item, key) => (
+                  <li
+                    key={key}
+                    className="list-disc text-left !font-normal text-slate-700"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="!mt-3 !font-normal text-slate-700"></p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

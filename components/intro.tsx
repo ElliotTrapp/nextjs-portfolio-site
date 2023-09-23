@@ -113,7 +113,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="textButton blackBackground group transition"
+          className="textButton blackBackground group !px-8 !py-4 transition"
           onClick={() => {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
@@ -124,7 +124,7 @@ export default function Intro() {
         </Link>
 
         <Link
-          className="whiteBackground textButton group cursor-pointer outline-none  transition"
+          className="whiteBackground textButton group cursor-pointer outline-none transition"
           href="/docs/Resume.pdf"
           download
         >
