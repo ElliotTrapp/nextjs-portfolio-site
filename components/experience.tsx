@@ -2,9 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import Link from "next/link";
 import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
+import Link from "next/link";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,7 +12,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
-  const ref = useSectionInView("Experience", 0.5);
+  const ref = useSectionInView("Experience", 0.2);
   return (
     <section
       ref={ref}

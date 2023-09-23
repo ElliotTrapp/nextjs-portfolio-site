@@ -8,6 +8,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "./active-section-context";
 
 // This calculates the number of years since a given date
 const YearsSinceDate = ({ startDate }: { startDate: Date }) => {
@@ -34,6 +35,13 @@ const YearsSinceDate = ({ startDate }: { startDate: Date }) => {
 };
 
 export default function Intro() {
+  const {
+    activeSection,
+    setActiveSection,
+    timeOfLastClick,
+    setTimeOfLastClick,
+  } = useActiveSectionContext();
+
   const ref = useSectionInView("Home");
   return (
     <section
@@ -105,14 +113,18 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-slate-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-slate-950 focus:scale-110 active:scale-105"
+          className="focusButtonPop group flex items-center gap-2 rounded-full bg-slate-900 px-7 py-3 text-white outline-none transition  hover:bg-slate-950"
+          onClick={() => {
+            setTimeOfLastClick(Date.now());
+            setActiveSection("Contact");
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 text-slate-950 outline-none transition hover:scale-110 hover:bg-white focus:scale-110 active:scale-105"
+          className="borderBlack focusButtonPop group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 text-slate-950 outline-none  transition hover:bg-white active:scale-105"
           href="/docs/Resume.pdf"
           download
         >
@@ -121,7 +133,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-slate-700 outline-none transition hover:scale-[1.15] hover:bg-white hover:text-slate-900 focus:scale-[1.15] active:scale-105"
+          className="borderBlack focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-slate-700 outline-none transition hover:bg-white hover:text-slate-900  "
           href="https://www.linkedin.com/in/elliot-trapp-144238225/"
           target="_blank"
         >
@@ -129,7 +141,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-slate-700 outline-none transition hover:scale-[1.15] hover:bg-white hover:text-slate-900 focus:scale-[1.15] active:scale-105"
+          className="borderBlack focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-slate-700 outline-none  transition hover:bg-white hover:text-slate-900"
           href="https://github.com/ElliotTrapp"
           target="_blank"
         >

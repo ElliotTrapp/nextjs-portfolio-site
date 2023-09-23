@@ -35,7 +35,7 @@ export default function Project({
     >
       <section
         className="
-    relative flex max-w-[100dvw] flex-col overflow-hidden rounded-lg border border-black/5 bg-slate-100 transition hover:border-black/10 hover:bg-slate-200 group-even:pl-8 sm:h-[20rem] sm:w-[48rem] sm:flex-row sm:pr-8"
+    hover:borderBlack relative flex max-w-[100dvw] flex-col overflow-hidden rounded-lg border border-black/5 bg-slate-100 transition hover:bg-slate-200 group-even:pl-8 sm:h-[20rem] sm:w-[48rem] sm:flex-row sm:pr-8"
       >
         {/* Text side of card */}
         <div

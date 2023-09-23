@@ -5,3 +5,15 @@
 html {
   --line-color: #e5e7eb;
 }
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.focusButtonPop {
+  @apply hover:scale-110 focus:scale-110 active:scale-105;
+}
+
+.focusButtonSmallPop {
+  @apply hover:scale-[1.15] focus:scale-[1.15] active:scale-105;
+}
