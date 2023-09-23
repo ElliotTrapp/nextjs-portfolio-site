@@ -5,10 +5,31 @@
 html {
   --line-color: #e5e7eb;
 }
+/* Text */
+.whiteText {
+  @apply text-white;
+}
+
+.blackText {
+  @apply text-slate-950 dark:text-slate-100 dark:hover:text-slate-100;
+}
+
+/* Backgrounds */
+
+.blackBackground {
+  @apply whiteText bg-slate-900 hover:bg-slate-950;
+}
+.whiteBackground {
+  @apply borderBlack blackText bg-white hover:bg-white dark:bg-white/10 dark:hover:bg-white/5;
+}
+
+/* Borders */
 
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* Behaviors */
 
 .focusButtonPop {
   @apply hover:scale-110 focus:scale-110 active:scale-105;
@@ -18,23 +39,26 @@ html {
   @apply hover:scale-[1.15] focus:scale-[1.15] active:scale-105;
 }
 
-.blackBackground {
-  @apply bg-slate-900 text-white hover:bg-slate-950;
-}
-.whiteBackground {
-  @apply borderBlack bg-white text-slate-950 hover:bg-white;
-}
+/* Buttons */
 
 .iconButton {
-  @apply focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full p-4 text-[1.35rem];
+  @apply focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full p-4 text-[1.35rem] outline-none;
 }
 
 .textButton {
   @apply focusButtonPop flex items-center gap-2 rounded-full px-7 py-3 outline-none;
 }
 
+/* Images */
+
 .picture {
   @apply rounded-full border-[0.35rem] border-white object-cover shadow-xl;
+}
+
+/* Cards */
+
+.projectCard {
+  @apply flex;
 }
 
 /*

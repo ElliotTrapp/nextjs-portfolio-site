@@ -113,7 +113,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="textButton blackBackground group !px-8 !py-4 transition"
+          className="textButton blackBackground group transition"
           onClick={() => {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
@@ -133,7 +133,7 @@ export default function Intro() {
         </Link>
 
         <Link
-          className="iconButton whiteBackground text-slate-700 outline-none transition hover:bg-white hover:text-slate-900"
+          className="iconButton whiteBackground transition"
           href="https://www.linkedin.com/in/elliot-trapp-144238225/"
           target="_blank"
         >
@@ -141,7 +141,7 @@ export default function Intro() {
         </Link>
 
         <Link
-          className="iconButton whiteBackground text-slate-700 outline-none  transition hover:bg-white hover:text-slate-900"
+          className="iconButton whiteBackground    transition"
           href="https://github.com/ElliotTrapp"
           target="_blank"
         >

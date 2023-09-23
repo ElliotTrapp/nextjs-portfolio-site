@@ -35,7 +35,7 @@ export default function Project({
     >
       <section
         className="
-    hover:borderBlack relative flex max-w-[100dvw] flex-col overflow-hidden rounded-lg border border-black/5 bg-slate-100 transition hover:bg-slate-200 group-even:pl-8 sm:h-[20rem] sm:w-[48rem] sm:flex-row sm:pr-8"
+    hover:borderBlack relative flex max-w-[100dvw] flex-col overflow-hidden rounded-lg border border-black/5 bg-slate-100 transition hover:bg-slate-200 group-even:pl-8 dark:bg-slate-100/10 dark:hover:bg-slate-100/20 sm:h-[20rem] sm:w-[48rem] sm:flex-row sm:pr-8"
       >
         {/* Text side of card */}
         <div
@@ -44,9 +44,7 @@ sm:max-w-[45%] sm:pl-10 sm:pr-2 sm:pt-10
 group-even:sm:ml-[24rem]"
         >
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mb-4 mt-2 leading-relaxed text-slate-700">
-            {description}
-          </p>
+          <p className="blackText mb-4 mt-2 leading-relaxed">{description}</p>
           <ul
             className="mt-4 flex flex-wrap gap-2
 sm:mt-auto"
