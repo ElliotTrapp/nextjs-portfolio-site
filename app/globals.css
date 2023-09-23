@@ -17,3 +17,33 @@ html {
 .focusButtonSmallPop {
   @apply hover:scale-[1.15] focus:scale-[1.15] active:scale-105;
 }
+
+.blackBackground {
+  @apply bg-slate-900 text-white hover:bg-slate-950;
+}
+.whiteBackground {
+  @apply borderBlack bg-white text-slate-950 hover:bg-white;
+}
+
+.iconButton {
+  @apply focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full p-4 text-[1.35rem];
+}
+
+.textButton {
+  @apply focusButtonPop flex items-center gap-2 rounded-full px-7 py-3 outline-none;
+}
+
+.picture {
+  @apply rounded-full border-[0.35rem] border-white object-cover shadow-xl;
+}
+
+/*
+
+.smallTextInputBox {
+  @apply;
+}
+
+.textInputBox {
+  @apply;
+}
+*/

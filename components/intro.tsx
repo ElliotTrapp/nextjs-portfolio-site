@@ -66,7 +66,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="picture h-24 w-24"
             />
           </motion.div>
           <motion.span
@@ -113,7 +113,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="focusButtonPop group flex items-center gap-2 rounded-full bg-slate-900 px-7 py-3 text-white outline-none transition  hover:bg-slate-950"
+          className="textButton blackBackground group transition"
           onClick={() => {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
@@ -123,30 +123,30 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
-        <a
-          className="borderBlack focusButtonPop group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 text-slate-950 outline-none  transition hover:bg-white active:scale-105"
+        <Link
+          className="whiteBackground textButton group cursor-pointer outline-none  transition"
           href="/docs/Resume.pdf"
           download
         >
           Download Resume{" "}
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
-        </a>
+        </Link>
 
-        <a
-          className="borderBlack focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-slate-700 outline-none transition hover:bg-white hover:text-slate-900  "
+        <Link
+          className="iconButton whiteBackground text-slate-700 outline-none transition hover:bg-white hover:text-slate-900"
           href="https://www.linkedin.com/in/elliot-trapp-144238225/"
           target="_blank"
         >
           <BsLinkedin className="" />
-        </a>
+        </Link>
 
-        <a
-          className="borderBlack focusButtonSmallPop flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-slate-700 outline-none  transition hover:bg-white hover:text-slate-900"
+        <Link
+          className="iconButton whiteBackground text-slate-700 outline-none  transition hover:bg-white hover:text-slate-900"
           href="https://github.com/ElliotTrapp"
           target="_blank"
         >
           <FaGithubSquare className="" />
-        </a>
+        </Link>
       </motion.div>
     </section>
   );
