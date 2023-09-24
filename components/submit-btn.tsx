@@ -8,7 +8,7 @@ export default function SubmitButton() {
     <>
       <button
         type="submit"
-        className="focusButtonPop disabled:bg-opacity-65 group flex h-[3rem] w-[8rem] items-center justify-center gap-2 rounded-full bg-slate-900 text-white outline-none transition-all hover:bg-slate-950 disabled:scale-100"
+        className="focusButtonPop disabled:bg-opacity-65 group flex h-[3rem] w-[8rem] items-center justify-center gap-2 rounded-full bg-slate-900 text-white outline-none transition-all hover:bg-slate-950 disabled:scale-100 dark:bg-white dark:bg-opacity-10"
         disabled={pending}
       >
         {pending ? (

@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import {
   useActiveSectionContext,
   SectionName,
-} from "@/components/active-section-context";
+} from "@/context/active-section-context";
 
 export function useSectionInView(
   SectionName: SectionName,

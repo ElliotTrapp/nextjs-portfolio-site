@@ -8,7 +8,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "./active-section-context";
+import { useActiveSectionContext } from "../context/active-section-context";
 
 // This calculates the number of years since a given date
 const YearsSinceDate = ({ startDate }: { startDate: Date }) => {

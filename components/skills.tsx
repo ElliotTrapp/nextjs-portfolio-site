@@ -30,7 +30,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <React.Fragment key={index}>
             <motion.li
-              className="rounded-xl border border-black/[0.1] bg-white px-5 py-3"
+              className="rounded-xl border border-black/[0.1] bg-white px-5 py-3 dark:bg-white/10 dark:text-white"
               key={skill}
               variants={fadeInAnimationVariants}
               initial="initial"
