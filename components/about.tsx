@@ -38,7 +38,7 @@ export default function About() {
           looking to learn new technologies.
         </p>
         <p className="mb-3">
-          Outside of technical skills, I am a an adept{" "}
+          Outside of technical skills, I am an adept{" "}
           <span className="font-medium">communicator and leader.</span> My
           background in the humanities trained me to communicate my ideas{" "}
           <span className="italic">clearly and concisely. </span>One of my
