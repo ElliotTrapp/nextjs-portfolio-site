@@ -42,7 +42,7 @@ export default function Intro() {
     setTimeOfLastClick,
   } = useActiveSectionContext();
 
-  const ref = useSectionInView("Home");
+  const ref = useSectionInView("Home", 0.8);
   return (
     <section
       ref={ref}
