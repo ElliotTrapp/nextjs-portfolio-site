@@ -10,26 +10,26 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 /* Text */
-.whiteText {
+.lightText {
   @apply text-white;
 }
 
-.blackText {
+.darkText {
   @apply text-slate-950 dark:text-slate-100 dark:hover:text-slate-100;
 }
 
 /* Backgrounds */
 
-.blackBackground {
-  @apply whiteText bg-slate-900 hover:bg-slate-950;
+.darkBackground {
+  @apply lightText bg-slate-900 hover:bg-slate-950;
 }
-.whiteBackground {
-  @apply borderBlack blackText bg-white hover:bg-white dark:bg-white/10 dark:hover:bg-white/5;
+.lightBackground {
+  @apply darkBoarder darkText bg-white hover:bg-white dark:bg-white/10 dark:hover:bg-white/5;
 }
 
 /* Borders */
 
-.borderBlack {
+.darkBoarder {
   @apply border border-black/10;
 }
 
@@ -63,6 +63,22 @@ html.dark {
 
 .projectCard {
   @apply flex;
+}
+
+/* Nav */
+
+.navButton {
+  @apply flex px-3 py-3 font-medium transition hover:text-slate-400 dark:text-slate-100 dark:hover:text-slate-600;
+}
+
+/* Structure */
+
+.containerStyle {
+  @apply mx-auto flex max-w-[50rem] flex-col items-center justify-center px-4;
+}
+
+.sectionStyle {
+  @apply mb-28 flex flex-col text-center;
 }
 
 /*

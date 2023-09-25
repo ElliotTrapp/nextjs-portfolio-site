@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
 import Link from "next/link";

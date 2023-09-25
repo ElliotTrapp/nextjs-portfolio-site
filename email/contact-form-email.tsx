@@ -28,7 +28,7 @@ export default function ContactFormEmail({
       <Tailwind>
         <Body className="bg-slate-100">
           <Container>
-            <Section className="borderBlack my-10 rounded-md bg-white px-10 py-4">
+            <Section className="darkBoarder my-10 rounded-md bg-white px-10 py-4">
               <Heading className="leading-tight">
                 {" "}
                 You received the following message from elliottrapp.com{" "}

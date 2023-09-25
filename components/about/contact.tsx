@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/lib/actions";
-import SubmitButton from "./submit-btn";
+import SubmitButton from "../submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
@@ -30,7 +30,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="-mt-6 text-slate-700 dark:text-white/80">
+      <p className="-mt-6 text-blue-800 dark:text-blue-800">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:mail@elliottrapp.com">
           mail@elliottrapp.com
@@ -51,7 +51,7 @@ export default function Contact() {
       >
         <input
           name="senderEmail"
-          className="borderBlack h-14 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100"
+          className="darkBoarder h-14 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100"
           type="email"
           required
           maxLength={500}
@@ -60,7 +60,7 @@ export default function Contact() {
 
         <textarea
           name="message"
-          className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100"
+          className="darkBoarder my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100"
           placeholder="Your message"
           required
           maxLength={5000}

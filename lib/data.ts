@@ -9,11 +9,18 @@ import ddImg from "@/public/dd.png";
 import siteImg from "@/public/site.png";
 import domImg from "@/public/dom-cli.png";
 
-export const links = [
+export const pageLinks = [
   {
-    name: "Home",
-    hash: "#home",
+    name: "About",
+    hash: "/about",
   },
+  {
+    name: "Blog",
+    hash: "/blog",
+  },
+] as const;
+
+export const links = [
   {
     name: "About",
     hash: "#about",
