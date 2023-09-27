@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${montserrat.className} relative bg-slate-50 text-slate-950 transition-colors dark:bg-zinc-900 dark:text-white/80`}
+        className={`${montserrat.className} relative bg-zinc-300 text-zinc-900 transition-colors dark:bg-zinc-900 dark:text-zinc-400`}
       >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>

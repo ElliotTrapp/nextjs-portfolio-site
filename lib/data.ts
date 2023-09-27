@@ -20,7 +20,7 @@ export const pageLinks = [
   },
 ] as const;
 
-export const links = [
+export const aboutLinks = [
   {
     name: "About",
     hash: "#about",
@@ -40,6 +40,17 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
+  },
+] as const;
+
+export const blogLinks = [
+  {
+    name: "New",
+    hash: "#new",
+  },
+  {
+    name: "Archive",
+    hash: "#archive",
   },
 ] as const;
 

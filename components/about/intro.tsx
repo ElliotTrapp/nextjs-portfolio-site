@@ -46,7 +46,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="sectionStyle flex h-[100dvh] w-[100dvw] flex-col items-center justify-center bg-[url('/bg.jpg')] bg-cover bg-fixed py-[8rem]"
+      className="sectionStyle mt-[4.5rem] flex h-[100dvh] w-[100dvw] flex-col items-center justify-center bg-[url('/bg.jpg')] bg-cover bg-fixed py-[8rem] sm:mt-[3.25rem]"
       id="home"
     >
       <div id="intro container" className="containerStyle">
@@ -86,7 +86,7 @@ export default function Intro() {
           </div>
         </div>
         <motion.h1
-          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] text-white dark:text-white sm:text-4xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
